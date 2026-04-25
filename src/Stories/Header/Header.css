@@ -1,0 +1,68 @@
+.mainheader {
+  width: 100%;
+  max-width: 1440px;
+  height: 72px;
+  background-color: #ffffff;
+  padding: 28px 0; 
+  display: flex;
+  justify-content: center;
+}
+
+.headercontainer {
+  width: 100%;
+  max-width: 1110px; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 24px; 
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px; 
+}
+
+.logo {
+  width: 170px;
+  height: 16px; 
+  cursor: pointer;
+}
+
+.home_link,
+.stories_link, 
+.features_link, 
+.pricing_link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: opacity 0.3s ease;
+}
+
+.home_link:hover,
+.stories_link:hover, 
+.features_link:hover, 
+.pricing_link:hover {
+  opacity: 0.3;
+}
+
+
+.invite-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.invite-btn:hover {
+  background-color: #dfdfdf;
+  color: #000000;
+}
