@@ -1,9 +1,14 @@
 import Section1 from "./Section1/Section1.jsx";
+import StoryCard from "./Section2/Section2.jsx";
 import manOnBridge from "../assets/manonbridge.jpg";
 import workspace from "../assets/workspace.jpg";
 import manWithCamera from "../assets/manwithcamera.jpg";
 import arrowWhite from "../assets/arrowicon.png";
 import arrowDark from "../assets/arrowicondark.svg";
+import mountainImg from "../assets/themountains.png";
+import cityImg from "../assets/cityscapes.png";
+import voyageImg from "../assets/voyage.png";
+import archImg from "../assets/architecturals.png";
 
 function Home() {
   return (
@@ -46,6 +51,34 @@ function Home() {
         hasLine={false}
         isReversed={false}
       />
+
+    <section2 className="stories-grid">
+        <StoryCard 
+          image={mountainImg}
+          title="The Mountains"
+          author="John Appleseed"
+          arrowicon={arrowWhite}
+        />
+        <StoryCard 
+          image={cityImg}
+          title="Sunset Cityscapes"
+          author="Benjamin Cruz"
+          arrowicon={arrowWhite}
+        />
+        <StoryCard 
+          image={voyageImg}
+          title="18 Days Voyage"
+          author="Alexei Borodin"
+          arrowicon={arrowWhite}
+        />
+        <StoryCard 
+          image={archImg}
+          title="Architecturals"
+          author="Samantha Brooke"
+          arrowicon={arrowWhite}
+        />
+      </section2>
+
     </main>
   );
 }

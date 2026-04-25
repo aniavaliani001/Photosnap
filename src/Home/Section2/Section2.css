@@ -1,0 +1,81 @@
+.stories-grid {
+  display: flex;
+  width: 100%;
+}
+
+.story-card {
+  position: relative;
+  flex: 1; /* ოთხივე თანაბარი ზომის */
+  height: 500px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-24px);
+}
+
+.story-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.story-content {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  color: white;
+  z-index: 2;
+}
+
+.story-date { font-size: 13px; margin-bottom: 4px; }
+.story-title { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+.story-author { font-size: 13px; margin-bottom: 16px; }
+
+.story-divider {
+  border: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin-bottom: 20px;
+}
+
+.story-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.white-arrow {
+  filter: brightness(0) invert(1); 
+}
+
+.hover-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(270deg, #FFC593 0%, #BC71FF 50%, #5A77FF 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.story-card:hover .hover-line {
+  opacity: 1;
+}
