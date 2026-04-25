@@ -17,7 +17,7 @@ import bullhornIcon from "../assets/003-bullhorn.png";
 function Home() {
   return (
     <main>
-      {/* 1. შავი სექცია ფერადი ხაზით */}
+      {/* --- SECTION 1: --- */}
       <Section1
         title="CREATE AND SHARE YOUR PHOTO STORIES."
         description="Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others."
@@ -55,8 +55,8 @@ function Home() {
         hasLine={false}
         isReversed={false}
       />
-
-      <section2 className="stories-grid">
+{/* --- SECTION 2: STORIES GRID --- */}
+      <section className="stories-grid">
         <StoryCard
           image={mountainImg}
           title="The Mountains"
@@ -81,8 +81,8 @@ function Home() {
           author="Samantha Brooke"
           arrowicon={arrowWhite}
         />
-      </section2>
-
+      </section>
+{/* --- SECTION 3: FEATURES --- */}
       <section className="features-container">
         <Section3
           icon={responsiveIcon}
