@@ -8,8 +8,8 @@ function Header() {
       <div className="headercontainer">
         <img src={logo} alt="photosnaplogo" className="logo" />
         <nav className="nav-menu">
-          <Link to="/home" className="home_link">
-          HOME
+          <Link to="/" className="home_link">
+            HOME
           </Link>
           <Link to="/stories" className="stories_link">
             STORIES
@@ -21,7 +21,9 @@ function Header() {
             PRICING
           </Link>
         </nav>
-        <button className="invite-btn">GET AN INVITE</button>
+        <Link to="/pricing" className="invite-btn">
+          GET AN INVITE
+        </Link>
       </div>
     </header>
   );

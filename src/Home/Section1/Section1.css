@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section-container {
+  display: flex;
+  height: 650px;
+  width: 100%;
+  margin: 0 !important; 
+  padding: 0 !important; 
+  border: none; 
+}
+.section-image-wrapper img {
+  display: block; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* თემების მართვა */
+.section-container.dark { background-color: #000; color: #fff; }
+.section-container.light { background-color: #fff; color: #000; }
+
+/* ადგილების გაცვლა */
+.section-container.reversed { flex-direction: row-reverse; }
+
+.section-text-wrapper {
+  flex: 1;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 0 54px;
+}
+
+/* გრადიენტიანი ხაზი (მხოლოდ პირველი სექციისთვის) */
+.accent-line {
+  position: absolute;
+  left: 0;
+  top: 173px;
+  width: 6px;
+  height: 304px;
+  background: linear-gradient(180deg, #5A77FF 0%, #BC71FF 49%, #FFC593 100%);
+}
+
+.content { max-width: 387px; }
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 4.17px;
+  line-height: 48px;
+  margin-bottom: 21px;
+  text-transform: uppercase;
+}
+
+.section-desc {
+  opacity: 0.6;
+  line-height: 25px;
+  margin-bottom: 48px;
+}
+
+.section-btn {
+  background: none;
+  border: none;
+  color: inherit; 
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0;
+  text-transform: uppercase;
+  text-decoration: none; 
+}
+
+.arrowicon {
+  width: 42px; 
+  height: auto;
+  margin-left: 16px;
+  transition: transform 0.3s ease;
+}
+
+/* 2. გაათეთროს ისარი მხოლოდ მაშინ, როცა მშობელი სექცია არის DARK */
+.section-container.dark .arrowicon {
+  filter: brightness(0) invert(1);
+}
+
+.section-container.light .arrowicon {
+  filter: none;
+}
+
+.section-btn:hover .arrowicon {
+  transform: translateX(10px);
+}
+
+/* ჰოვერ ეფექტი: ტექსტის ხაზგასმა */
+.section-btn:hover {
+  text-decoration: underline;
+}
+
+/* ფერების ლოგიკა: შავ სექციაში ისარი თეთრდება */
+.section-container.dark .arrowicon {
+  filter: brightness(0) invert(1);
+}
+
+/* ფერების ლოგიკა: თეთრ სექციაში ისარი რჩება შავი */
+.section-container.light .arrowicon {
+  filter: none;
+}

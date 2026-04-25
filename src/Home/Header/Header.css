@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap');
 .mainheader {
   width: 100%;
   max-width: 1440px;
@@ -58,6 +59,7 @@
   font-weight: 700;
   letter-spacing: 2px;
   cursor: pointer;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 

@@ -16,26 +16,26 @@ function Footer() {
         <div className="footer-left-block">
           <img src={logo} alt="photosnap" className="footer-logo" />
           <div className="social-icons">
-            <a href="#"><img src={Fbicon} className="fb-icon" /> </a>
-            <a href="#"><img src={Yticon} className="youtube-icon" /> </a>
-            <a href="#"><img src={Twicon} className="twitter-icon" /> </a>
-            <a href="#"><img src={Pinteresticon} className="pinterest-icon" /> </a>
-            <a href="#"><img src={Instaicon} className="insta-icon" /> </a>
+            <a href="https://www.facebook.com/"><img src={Fbicon} className="fb-icon" /> </a>
+            <a href="https://www.youtube.com/"><img src={Yticon} className="youtube-icon" /> </a>
+            <a href="https://x.com/"><img src={Twicon} className="twitter-icon" /> </a>
+            <a href="https://www.pinterest.com/"><img src={Pinteresticon} className="pinterest-icon" /> </a>
+            <a href="https://www.instagram.com/?hl=en"><img src={Instaicon} className="insta-icon" /> </a>
           </div>
         </div>
 
           <nav className="footer-nav">
-          <Link to="/home" className="footer-link">HOME</Link>
+          <Link to="/" className="footer-link">HOME</Link>
           <Link to="/stories" className="footer-link">STORIES</Link>
           <Link to="/features" className="footer-link">FEATURES</Link>
           <Link to="/pricing" className="footer-link">PRICING</Link>
           </nav>
 
         <div className="footer-right-block">
-          <button className="footer-invite-btn">
+          <Link to="/pricing" className="footer-invite-btn">
             GET AN INVITE 
             <img src={arrow} alt="arrow" className="arrowicon" />
-          </button>
+          </Link> 
           <p className="copyright">Copyright 2026. All Rights Reserved</p>
         </div>
 
