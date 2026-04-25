@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
-import logo from "../../assets/photosnaplogo.svg";
+import logo from "../../assets/Photosnaplogo.svg";
 
 function Header() {
   return (
