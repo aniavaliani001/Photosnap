@@ -1,4 +1,4 @@
-import "./section3.css";
+import "./Section3.css";
 
 function Section3(props) {
   return (
