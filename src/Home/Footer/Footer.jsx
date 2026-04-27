@@ -25,14 +25,14 @@ function Footer() {
         </div>
 
           <nav className="footer-nav">
-          <Link to="/" className="footer-link">HOME</Link>
-          <Link to="/stories" className="footer-link">STORIES</Link>
-          <Link to="/features" className="footer-link">FEATURES</Link>
-          <Link to="/pricing" className="footer-link">PRICING</Link>
+          <Link to="/" className="footer-link" onClick={() => window.scrollTo(0, 0)}>HOME</Link>
+          <Link to="/stories" className="footer-link" onClick={() => window.scrollTo(0, 0)}>STORIES</Link>
+          <Link to="/features" className="footer-link" onClick={() => window.scrollTo(0, 0)}>FEATURES</Link>
+          <Link to="/pricing" className="footer-link" onClick={() => window.scrollTo(0, 0)}>PRICING</Link>
           </nav>
 
         <div className="footer-right-block">
-          <Link to="/pricing" className="footer-invite-btn">
+          <Link to="/pricing" className="footer-invite-btn" onClick={() => window.scrollTo(0, 0)}>
             GET AN INVITE 
             <img src={arrow} alt="arrow" className="arrowicon" />
           </Link> 

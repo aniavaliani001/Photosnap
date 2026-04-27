@@ -14,7 +14,7 @@ function Section1(props) {
         <div className="content">
           <h1 className="section-title">{props.title}</h1>
           <p className="section-desc">{props.description}</p>
-          <Link to={props.linkTo || "/"} className="section-btn">
+          <Link to={props.linkTo || "/"} className="section-btn" onClick={() => window.scrollTo(0, 0)}>
             {props.buttonText}
             <img src={props.arrowicon} alt="arrow" className="arrowicon" />
           </Link>

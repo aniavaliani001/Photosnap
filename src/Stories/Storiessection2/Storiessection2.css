@@ -1,0 +1,19 @@
+.stories-all-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 სვეტი */
+  width: 100%;
+}
+
+/* პლანშეტებისთვის - 2 სვეტი */
+@media (max-width: 1024px) {
+  .stories-all-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* მობილურებისთვის - 1 სვეტი */
+@media (max-width: 600px) {
+  .stories-all-grid {
+    grid-template-columns: 1fr;
+  }
+}
