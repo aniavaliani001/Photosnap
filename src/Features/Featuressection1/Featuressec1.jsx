@@ -1,5 +1,4 @@
 import "./Featuressec1.css";
-// დარწმუნდი, რომ ფოტოს გზა სწორია
 import cameramanImg from "../../assets/featurescameraman.png"; 
 
 function Featuressec1() {

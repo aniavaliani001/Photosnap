@@ -1,0 +1,93 @@
+.compare-section {
+  max-width: 730px; /* ფიგმაში ცხრილი უფრო ვიწროა ვიდრე ქარდები */
+  margin: 160px auto;
+  padding: 0 20px;
+}
+
+.compare-maintitle {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 4px;
+  margin-bottom: 64px;
+  display: block; /* Desktop-ზე ჩანს, მობილურზე შეიძლება დაიმალოს */
+}
+
+/* Header */
+.compare-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid black;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.plans-head {
+  display: flex;
+  width: 420px;
+  justify-content: space-around;
+}
+
+/* Row */
+.compare-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.comparefeature-name {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  width: 250px;
+}
+
+.compare-statusbox {
+  display: flex;
+  width: 420px;
+  justify-content: space-around;
+}
+
+.compare-status {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-only {
+  display: none; 
+}
+
+/* მობილური ვერსია */
+@media (max-width: 600px) {
+  .compare-main-title { display: none; } /* ფიგმაში მობილურზე ეს სათაური ხშირად არაა */
+  
+  .compare-header { display: none; }
+  
+  .compare-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .compare-status-box {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-top: 16px;
+  }
+  
+  .compare-status {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .mobile-only {
+    display: block;
+    font-size: 10px;
+    opacity: 0.5;
+  }
+}

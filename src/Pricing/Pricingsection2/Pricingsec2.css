@@ -1,0 +1,139 @@
+.pricing-plans-section {
+  max-width: 1110px;
+  margin: 120px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Toggle Styling */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.toggle-label {
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.active-label {
+  color: black;
+  opacity: 1;
+  font-weight: 700;
+}
+.inactive-label {
+  color: black;
+  opacity: 0.5;
+  font-weight: 700;
+}
+
+.toggle-switch {
+  width: 64px;
+  height: 32px;
+  background: #dfdfdf;
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-switch.yearly-active {
+  background: black;
+}
+
+.toggle-circle {
+  width: 24px;
+  height: 24px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.yearly-active .toggle-circle {
+  left: 36px;
+  background: white;
+}
+
+/* Cards Styling */
+.plans-cards-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.plan-card {
+  background: #f8f8f8;
+  padding: 56px 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pro-black {
+  background: black;
+  color: white;
+  padding: 88px 40px; /* შუა ქარდი უფრო მაღალია */
+}
+
+.gradient-top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.33%,
+    #5a77ff 100%
+  );
+}
+
+.price-val {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+.price-time {
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.pick-plan-btn {
+  margin-top: 40px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.white-btn {
+  background: white;
+  color: black;
+}
+
+.pick-plan-btn:hover {
+  background: #dfdfdf;
+  color: black;
+}
+
+@media (max-width: 800px) {
+  .plans-cards-wrapper {
+    flex-direction: column;
+  }
+  .pro-black {
+    padding: 56px 40px;
+  }
+}
