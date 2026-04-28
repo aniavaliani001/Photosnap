@@ -1,0 +1,113 @@
+.featurebeta-container {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.featurebeta-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.featurebeta-accent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.33%,
+    #5a77ff 100%
+  );
+}
+
+.featurebeta-content {
+  width: 100%;
+  max-width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  color: white;
+  z-index: 1;
+}
+
+/* სათაური */
+.featurebeta-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 4.17px;
+  max-width: 400px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* ლინკი-ღილაკი */
+.featurebeta-button {
+  text-decoration: none;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.featurebeta-button:hover {
+  text-decoration: underline;
+}
+
+/* ისრის აიქონი */
+.featurebeta-arrow {
+  height: 12px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.featurebeta-button:hover .featurebeta-arrow {
+  transform: translateX(10px);
+}
+
+/* --- მობილური ვერსია (Responsive) --- */
+@media (max-width: 768px) {
+  .featurebeta-container {
+    height: auto;
+    padding: 64px 0;
+  }
+
+  .featurebeta-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .featurebeta-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  /* მობილურზე ფერადი ხაზი ზემოთ გადადის */
+  .featurebeta-accent {
+    width: 100%;
+    height: 6px;
+    top: 0;
+  }
+}

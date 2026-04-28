@@ -1,0 +1,71 @@
+.feature-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 160px 0;
+  background-color: #fff;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px 30px;
+  max-width: 1110px;
+  width: 90%;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-icon-box {
+  height: 72px;
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-img {
+  max-width: 72px;
+  height: auto;
+  object-fit: contain;
+}
+
+.feature-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.feature-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+  color: #000;
+}
+
+/* პლანშეტისთვის */
+@media (max-width: 1000px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* მობილურისთვის */
+@media (max-width: 600px) {
+  .feature-section {
+    padding: 64px 0;
+  }
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+}
